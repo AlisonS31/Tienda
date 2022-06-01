@@ -1,0 +1,63 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 may. 2022, 18:21:10
+    Author     : EB8470W
+*/
+
+/*IMPORTANTE:
+* box-sizing: define el tamaño de nuestros contenedores segun las medidas del border,
+margin, contend, y padding.
+* content-box: toma en cuenta, contenido, borde y paddign para el calculo de la caja.
+* border-box: modifica valores de contenido para que coincida  con nuestro ancho y 
+alto.
+* position: es otra propiedad que nos permite desplazar o mover nuestros contenedores:
+           - static
+           - relative
+           - absolute
+           - fixed
+           - sticky
+*/
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 20px solid blue;
+    box-sizing: border-box;
+}
+
+.static {
+    position: static;
+    border: 3px solid chartreuse;
+    top: 400px;
+    left: 50px;
+}
+
+.relative {
+    position: relative;
+    border: 3px solid crimson;
+    top: 400px;
+    left: 50px;
+    width: 400px;
+    height: 500px;
+}
+
+.fixed {
+    position: fixed;
+    border: 3px solid darksalmon;
+    top: 400px;
+    left: 50px;
+}
+
+.absolute {
+    position: absolute;
+    border: 3px solid turquoise;
+    top: 80px;
+    left: 50px;
+    width: 200px;
+    height: 100px;
+}
