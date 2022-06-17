@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.tienda.entity;
-
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,14 +14,12 @@ import javax.persistence.Table;
  *
  * @author EB8470W
  */
-
 @Entity
-@Table(name="paises")
-
+@Table(name = "paises")
 public class Pais implements Serializable {
-    
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nombre;
 
@@ -40,6 +37,6 @@ public class Pais implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    } 
-    
+    }
+
 }

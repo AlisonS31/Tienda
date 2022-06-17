@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.tienda.service;
-
 import com.tienda.entity.Persona;
 import java.util.List;
 
@@ -11,10 +10,9 @@ import java.util.List;
  *
  * @author EB8470W
  */
-//EL NOMBRE EMPIEZA CON i MAYUSCULA
 public interface IPersonaService {
-    public List <Persona> getAllPersona();
-    public Persona getPersonaById (long id);
-    public void savePersona (Persona persona);
-    public void delete (long id);
+    public List<Persona> getAllPersona();
+    public Persona getPersonaById(long id);
+    public void savePersona(Persona persona);
+    public void delete(long id);
 }

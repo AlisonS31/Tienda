@@ -6,12 +6,12 @@ package com.tienda.repository;
 import com.tienda.entity.Persona;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+
 /**
  *
  * @author EB8470W
  */
 @Repository
+public interface PersonaRepository extends CrudRepository<Persona, Long> {
 
-public interface PersonaRepository extends CrudRepository<Persona,Long>{
-    
 }
