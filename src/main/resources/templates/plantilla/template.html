@@ -40,8 +40,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </nav>
 
         </header>
-        
-        i18n
 
         <!-- FOOTER -->
         <footer class="bg-light text-center text-lg-start">
@@ -49,8 +47,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 © 2020 Copyright:
                 <a class="text-dark" href="Mi Tienda">MDBootstrap.com</a>
             </div>
+            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+               th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
+            <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
+               th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
         </footer>
-
-
+        
     </body>
 </html>
